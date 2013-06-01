@@ -1,0 +1,29 @@
+{
+	"type": "Collection",
+	"properties": {
+		"accountId": {
+			"name": "accountId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "accountId",
+			"order": 0
+		},
+		"amt": {
+			"name": "amt",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "amt",
+			"order": 1
+		},
+		"type": {
+			"name": "type",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "type",
+			"order": 2
+		}
+	}
+}
