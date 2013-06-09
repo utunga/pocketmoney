@@ -1,0 +1,15 @@
+@import "compass_twitter_bootstrap";
+@import "compass_twitter_bootstrap_responsive";
+.bar-tab .tab-item a i { color: #fff; }
+.bar-tab .tab-item.active a i { color: #0088cc; }
+.circle .image-wrap {
+	-webkit-border-radius: 50em;
+	-moz-border-radius: 50em;
+	border-radius: 50em;
+}
+.entry {
+	border-top: solid 1px gray;
+}
+.entry div {
+	border-right: solid 1px gray;
+}

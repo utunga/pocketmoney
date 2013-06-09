@@ -24,6 +24,22 @@
 			"required": false,
 			"id": "type",
 			"order": 2
+		},
+		"date": {
+			"name": "date",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "date",
+			"order": 3
+		},
+		"note": {
+			"name": "note",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "note",
+			"order": 4
 		}
 	}
 }

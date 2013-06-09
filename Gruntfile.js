@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 
   // configurable paths
   var yeomanConfig = {
-    app: 'dpd/public',
+    app: 'app',
     dist: 'dist'
   };
 
@@ -45,7 +45,7 @@ module.exports = function (grunt) {
     },
     connect: {
       options: {
-        port: 2403, //port: 9000,
+        port: 9000, // dpd port 2403, //port: 9000,
         // Change this to '0.0.0.0' to access the server from outside.
         hostname: 'localhost'
       },

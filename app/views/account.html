@@ -1,0 +1,45 @@
+<div class="container-fluid">
+	<div class="row-fluid"> 
+		<div class="span2 circle">  
+			<span class="image-wrap" style="position:relative; display:inline-block; background:url(images/kid_sweater.jpeg) no-repeat center center; width: 100px; height: 100px;">
+				<img src="images/kid_sweater.jpeg" style="opacity: 0;">
+			</span>
+			<h3>{{account.name}}</h3>
+		</div>
+		<div class="span10">
+			<h4>{{account.balance | currency}}</h4>
+		</div>
+	</div>
+
+	<div class="entry row-fluid" > 
+			<div class="span2">  
+				<b></b>
+			</div>
+			<div class="span3">
+				<b></b>
+			</div>
+			<div class="span2">
+				<a href="#"><i class="icon-plus-sign icon-large"></i></a>
+			</div>
+	</div>
+	<div class="entry row-fluid" ng-repeat="entry in entries"> 
+		<div class="span2">  
+			<b>{{entry.date}}</b>
+		</div>
+		<div class="span3">
+			<b>{{entry.amt | currency}}</b>
+		</div>
+		<div class="span2">
+			<a href="#"><i class="icon-edit-sign icon-large"></i></a>
+		</div>
+	</div>
+
+
+	<form>
+	  <div class="input-group">
+	    <input type="text" placeholder="Full name">
+	    <input type="email" placeholder="Email">
+	    <input type="text" placeholder="Username">
+	  </div>
+	</form>
+</div>
