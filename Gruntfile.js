@@ -68,6 +68,7 @@ module.exports = function (grunt) {
               mountFolder(connect, 'test')
             ];
           }
+          //,keepalive: true
         }
       }
     },
@@ -274,15 +275,15 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', [
     'clean:server',
-    'coffee',
-    'compass',
+    //'coffee',
+    //'compass',
     'connect:test',
     'karma'
   ]);
 
   grunt.registerTask('build', [
     'clean:dist',
-    'jshint',
+    //'jshint',
     'test',
     'coffee',
     'compass:dist',

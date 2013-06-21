@@ -1,0 +1,27 @@
+//
+// Responsive Grid for tiny devices - because
+// --------------------------------------------------
+
+// Tinypx-979px
+$gridColumnWidthTiny:      21px !default; /* 42px !default; */
+$gridGutterWidthTiny:      10px !default; /* 20px !default; */
+$gridRowWidthTiny:         ($gridColumns * $gridColumnWidthTiny) + ($gridGutterWidthTiny * ($gridColumns - 1)) !default;
+
+// Tinypx-979px
+$fluidGridColumnWidthTiny:      percentage($gridColumnWidthTiny/$gridRowWidthTiny) !default;
+$fluidGridGutterWidthTiny:      percentage($gridGutterWidthTiny/$gridRowWidthTiny) !default;
+
+@media (min-width: 50px) and (max-width: 768px) {
+
+  // Fixed grid
+  @include ctb-grid-core($gridColumnWidth, $gridGutterWidthTiny);
+
+  // Fluid grid
+  @include ctb-grid-fluid($fluidGridColumnWidthTiny, $fluidGridGutterWidthTiny);
+
+  // Input grid
+  @include ctb-grid-input($gridColumnWidthTiny, $gridGutterWidthTiny);
+
+  // No need to reset .thumbnails here since it's the same $gridGutterWidth
+
+}

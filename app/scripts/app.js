@@ -40,7 +40,8 @@ angular.module('ang4App', ['restangular'])
 })
 .directive('footer', function () {
     return {
-        restrict: 'A', //This menas that it will be used as an attribute and NOT as an element.        replace: true,
+        restrict: 'A', //This means that it will be used as an attribute and NOT as an element. 
+        replace: true,
         //scope: {user: '='}, // 
         templateUrl: "views/footer.html",
         controller: ['$scope', '$location', function ($scope, $location) {
